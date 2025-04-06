@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 export default function Tags(props) {
   const router = useRouter();
 
-  const title = props.title ? props.title + " | LMSYS Org" : "LMSYS Org";
+  const title = "Raccoon Hub";
   const desc = props.desc
     ? props.desc
     : "LMSYS Org, Large Model Systems Organization, is an organization missioned to democratize the technologies underlying large models and their system infrastructures.";

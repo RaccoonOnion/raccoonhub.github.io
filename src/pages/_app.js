@@ -5,13 +5,14 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps, router }) {
   return (
-    <div className="w-screen full-container flex-col md:flex-row flex ">
-      <div className="md:basis-1/5  ">
+    <div className="w-screen full-container flex-col md:flex-column flex ">
+      <div style={{ flexBasis: '20%' }}>
         <Nav />
       </div>
       <div
         id="content"
-        className="md:overflow-y-scroll md:max-h-screen md:z-50 md:shadow-lg shadow-neutral-600/70 text-sky grow md:grow-0 md:basis-4/5 flex child:grow flex-col "
+        style={{ width: '100%' }}
+        className="md:overflow-y-scroll md:max-h-screen md:z-50 md:shadow-lg shadow-neutral-600/70 text-sky grow flex child:grow flex-col "
       >
         <LazyMotion features={domAnimation}>
           <AnimatePresence
