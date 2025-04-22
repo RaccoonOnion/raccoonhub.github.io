@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/raccoonhub.github.io', 
+
   reactStrictMode: true,
   trailingSlash: true,
   images: {
